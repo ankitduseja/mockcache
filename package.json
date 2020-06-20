@@ -1,0 +1,41 @@
+{
+  "name": "mockcache",
+  "version": "0.0.1",
+  "description": "Mockcache helps developers (specially frontend web / app developers) to avoid api downtime when the dependent backend service goes down or when you wish to work offline. This can also act as a caching server to speed up responses from your original server.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --inspect index.js --ignore 'responses/*.json'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ankitduseja/mockcache.git"
+  },
+  "bin": {
+    "mockcache": "index.js"
+  },
+  "keywords": [
+    "api",
+    "mock",
+    "proxy",
+    "cache",
+    "frontend",
+    "android",
+    "ios",
+    "web",
+    "development"
+  ],
+  "author": "Ankit Duseja",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "http-proxy-middleware": "0.20.0",
+    "md5": "2.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.4"
+  }
+}
